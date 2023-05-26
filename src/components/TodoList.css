@@ -1,0 +1,69 @@
+:root {
+    --primary-color: #264653;
+    --secondary-color: #2a9d8f;
+    --background-color: #f1faee;
+    --text-color: #1d3557;
+    --button-color: #e63946;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    padding: 2em;
+    box-sizing: border-box;
+  }
+  
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  .todo.isCompleted {
+    text-decoration: line-through;
+  }
+  
+  .todo__button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    color: var(--background-color);
+    background-color: var(--button-color);
+    cursor: pointer;
+  }
+  
+  .todo__button--complete {
+    background-color: var(--primary-color);
+  }
+  
+  .todo-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .todo-form__input {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  
